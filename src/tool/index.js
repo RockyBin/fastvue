@@ -14,7 +14,7 @@ fetch.interceptors.request.use(res=>{
     console.log('request',res);
     let token = Cookie.get('token');
     if(token)
-    res.headers.accessToken = token;  
+    res.headers.token = token;  
     return res;
 },error=>{
     console.log(error);
