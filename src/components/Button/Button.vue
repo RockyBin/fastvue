@@ -1,0 +1,99 @@
+<template>
+    <span class="button">
+        <van-button 
+        :type="type" 
+        :size="size" 
+        :text="text" 
+        :color="color" 
+        :icon="icon"
+        :plain="plain"
+        :round="round"
+        :square="square"
+        :disabled="disabled"
+        :loading="loading"
+        :loading-text="loadingText"
+        :loading-type="loadingType"
+        :loading-size="loadingSize"
+        :url="url"
+        :to="to"
+        @click="jump"
+        />
+    </span>
+</template>
+
+<script>
+export default {
+    props:{
+        type:{
+            type:String,
+            default:'primary'
+        },
+        size:{
+            type:String,
+            default:'normal'
+        },
+        text:{
+            type:String,
+            default:'按钮'
+        },
+        color:{
+            type:String,
+            default:''
+        },
+        icon:{
+            type:String,
+            default:''
+        },
+        plain:{
+            type:Boolean,
+            default:false,
+        },
+        square:{
+            type:Boolean,
+            default:false,
+        },
+        round:{
+            type:Boolean,
+            default:false,
+        },
+        disabled:{
+            type:Boolean,
+            default:false,
+        },
+        loading:{
+            type:Boolean,
+            default:false,
+        },
+        loadingText:{
+            type:String,
+            default:'加载中'
+        },
+        loadingType:{
+            type:String,
+            default:'circular'
+        },
+        loadingSize:{
+            type:String,
+            default:'20px'
+        },
+        url:{
+            type:String,
+            default:''
+        },
+        to:{
+            type:String,
+            default:''
+        },
+    },
+    methods:{
+        jump(){
+            //console.log('jump');
+            this.$emit('jump')
+        }
+    }
+}
+</script>
+
+<style lang="less" scoped>
+    
+</style>
