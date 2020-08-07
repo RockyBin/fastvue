@@ -16,7 +16,7 @@
                 <Button :square="true"  type="danger" text="删除" />
             </template>
         </van-swipe-cell>
-
+        <v-top />
     </div>
 </template>
 
@@ -48,6 +48,14 @@ export default {
                 {title:'iphone11',desc:'爱疯手机，你的最爱！',price:7500,originPrice:9500,thumb:'https://img.yzcdn.cn/vant/cat.jpeg',tag:''},
                 {title:'iphone12',desc:'爱疯手机，你的最爱！',price:8500,originPrice:10500,thumb:'https://img.yzcdn.cn/vant/ipad.jpeg',tag:''},
                 {title:'iphone13',desc:'爱疯手机，你的最爱！',price:9500,originPrice:11500,thumb:'https://img.yzcdn.cn/vant/cat.jpeg',tag:''},
+                {title:'iphone10',desc:'爱疯手机，你的最爱！',price:6500,originPrice:8500,thumb:'https://img.yzcdn.cn/vant/ipad.jpeg',tag:''},
+                {title:'iphone11',desc:'爱疯手机，你的最爱！',price:7500,originPrice:9500,thumb:'https://img.yzcdn.cn/vant/cat.jpeg',tag:''},
+                {title:'iphone12',desc:'爱疯手机，你的最爱！',price:8500,originPrice:10500,thumb:'https://img.yzcdn.cn/vant/ipad.jpeg',tag:''},
+                {title:'iphone13',desc:'爱疯手机，你的最爱！',price:9500,originPrice:11500,thumb:'https://img.yzcdn.cn/vant/cat.jpeg',tag:''},
+                {title:'iphone10',desc:'爱疯手机，你的最爱！',price:6500,originPrice:8500,thumb:'https://img.yzcdn.cn/vant/ipad.jpeg',tag:''},
+                {title:'iphone11',desc:'爱疯手机，你的最爱！',price:7500,originPrice:9500,thumb:'https://img.yzcdn.cn/vant/cat.jpeg',tag:''},
+                {title:'iphone12',desc:'爱疯手机，你的最爱！',price:8500,originPrice:10500,thumb:'https://img.yzcdn.cn/vant/ipad.jpeg',tag:''},
+                {title:'iphone13',desc:'爱疯手机，你的最爱！',price:9500,originPrice:11500,thumb:'https://img.yzcdn.cn/vant/cat.jpeg',tag:''},
             ]
         }
     },
@@ -69,5 +77,11 @@ export default {
 </script>
 
 <style lang="">
-    
+.svg-icon {
+  width: 3em;
+  height: 3em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 </style>

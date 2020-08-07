@@ -8,6 +8,10 @@ import VueI18n from "vue-i18n";
 import LangENUS from './i18n/en'
 import LangZHCN from './i18n/zh'
 import fetch from './tool'
+import VTop from './components/backToTop/ToTop.vue'
+import './icons' // icon
+
+Vue.component('v-top', VTop);
 
 //prototype
 Vue.prototype.fetch = fetch;
